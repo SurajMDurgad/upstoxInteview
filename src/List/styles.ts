@@ -31,6 +31,16 @@ const Styles = StyleSheet.create({
   },
   flatList: {
     paddingBottom: 200
+  },
+  errorText: {
+    alignSelf: 'center',
+    paddingTop: 20,
+    fontSize: 16,
+    color: 'red',
+    fontWeight: 'bold'
+  },
+  loader: {
+    padding: 20
   }
 });
 

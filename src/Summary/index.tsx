@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react';
 import Animated, { Extrapolation, interpolate, useAnimatedStyle, useSharedValue, withSpring, } from 'react-native-reanimated';
-import { Text, TouchableOpacity, Modal, View } from 'react-native';
+import { Text, TouchableOpacity, View } from 'react-native';
 
 const AnimatedTouchableOpacity = Animated.createAnimatedComponent(TouchableOpacity);
 
