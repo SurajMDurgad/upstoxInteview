@@ -43,7 +43,6 @@ const Styles = StyleSheet.create({
   },
   triangle: {
     alignSelf: 'center',
-    width: 10,
     borderTopWidth: 10,
     borderRightWidth: 10,
     borderBottomWidth: 0,
