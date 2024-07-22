@@ -1,15 +1,16 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { useCallback, useEffect, useState } from 'react';
+import { Modal, Text, View } from 'react-native';
 
 import Styles from './styles';
+import Header from '../Header';
+import List from '../List';
 
-type Props = {};
+const Home = () => {
 
-const Home = (props: Props) => {
-  const { } = props;
   return (
     <View style={Styles.container}>
-      <Text>Home</Text>
+      <Header />
+      <List />
     </View>
   );
 };
