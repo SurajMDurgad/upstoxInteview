@@ -3,7 +3,7 @@ import { ActivityIndicator, FlatList, Text, View } from 'react-native';
 
 import Styles from './styles';
 import EachItem from './EachItem';
-import Summary from './Summary';
+import Summary from '../Summary';
 
 const Home = () => {
 
