@@ -8,8 +8,6 @@ import Styles from './styles';
 
 type Props = {
   data: Item[],
-  index: number,
-  toggleBottomSheet: (index: number) => void
 };
 
 

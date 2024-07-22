@@ -27,19 +27,13 @@ const Home = (props: Props) => {
   }, []);
 
   const keyExtractor = useCallback((item: Item) => item.symbol, []);
-  const [bottomSheetIndex, setBottomSheetIndex] = React.useState(-1);
 
-  const toggleBottomSheet = useCallback((index: number) => {
-    setBottomSheetIndex(index);
-  }, [])
 
-  const renderItem = useCallback(({ item, index }: { item: Item, index: number }) => {
+  const renderItem = useCallback(({ item }: { item: Item }) => {
     return (
       <EachItem
         key={item.symbol}
-        item={item}
-        toggleBottomSheet={toggleBottomSheet}
-        index={index} />
+        item={item} />
     )
   }, [])
 
@@ -48,12 +42,11 @@ const Home = (props: Props) => {
     <View style={Styles.container}>
       <FlatList
         data={data}
+        contentContainerStyle={Styles.flatList}
         renderItem={renderItem}
         keyExtractor={keyExtractor} />
       <Summary
-        data={data}
-        toggleBottomSheet={toggleBottomSheet}
-        index={bottomSheetIndex} />
+        data={data} />
     </View>
   );
 };

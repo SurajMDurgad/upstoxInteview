@@ -29,6 +29,9 @@ const Styles = StyleSheet.create({
   boldText: {
     fontWeight: 'bold'
   },
+  flatList: {
+    paddingBottom: 100
+  }
 });
 
 export default Styles;
