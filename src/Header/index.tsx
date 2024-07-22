@@ -3,10 +3,7 @@ import { Text, View } from 'react-native';
 
 import Styles from './styles';
 
-type Props = {};
-
-const Header = (props: Props) => {
-  const { } = props;
+const Header = () => {
   return (
     <View style={Styles.container}>
       <Text style={Styles.text}>Upstox holding</Text>

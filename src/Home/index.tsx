@@ -6,7 +6,6 @@ import Header from '../Header';
 import List from '../List';
 
 const Home = () => {
-
   return (
     <View style={Styles.container}>
       <Header />
