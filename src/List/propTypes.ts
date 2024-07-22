@@ -5,3 +5,10 @@ type Item = {
   avgPrice: number;
   close: number
 }
+
+type SummaryData = {
+  totalPL: number;
+  sumOfAllCurrentValue: number;
+  sumOfAllInvestment: number;
+  todayPL: number;
+}

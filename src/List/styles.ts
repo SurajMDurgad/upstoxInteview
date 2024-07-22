@@ -30,7 +30,7 @@ const Styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   flatList: {
-    paddingBottom: 100
+    paddingBottom: 200
   }
 });
 

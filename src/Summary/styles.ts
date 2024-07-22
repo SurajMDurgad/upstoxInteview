@@ -9,6 +9,7 @@ const Styles = StyleSheet.create({
     overflow: 'hidden',
     borderTopWidth: 1,
     borderTopColor: '#ECECEC',
+    padding: 10
   },
   flexOne: {
     flex: 1
@@ -21,7 +22,6 @@ const Styles = StyleSheet.create({
     backgroundColor: 'white'
   },
   eachRow: {
-    height: 50,
     flexDirection: 'row',
     marginHorizontal: 10,
     marginVertical: 5,
@@ -40,7 +40,19 @@ const Styles = StyleSheet.create({
   },
   info: {
     fontSize: 16
-  }
+  },
+  triangle: {
+    alignSelf: 'center',
+    width: 10,
+    borderTopWidth: 10,
+    borderRightWidth: 10,
+    borderBottomWidth: 0,
+    borderLeftWidth: 10,
+    borderTopColor: "#AE50DA",
+    borderRightColor: 'transparent',
+    borderBottomColor: 'transparent',
+    borderLeftColor: 'transparent',
+  },
 });
 
 export default Styles;
