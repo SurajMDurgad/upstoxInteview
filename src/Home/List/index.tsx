@@ -45,7 +45,7 @@ const Home = () => {
       const { userHolding } = json.data;
       calculateFinalData(userHolding);
     } catch (error: any) {
-      console.log('error', error);
+      setIsLoading(false);
       setError('Error fetching data - ' + error.message);
     }
   }, [setIsLoading, setError, calculateFinalData]);
