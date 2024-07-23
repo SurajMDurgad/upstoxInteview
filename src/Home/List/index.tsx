@@ -5,8 +5,7 @@ import Styles from './styles';
 import EachItem from './EachItem';
 import Summary from '../Summary';
 
-const Home = () => {
-
+const List = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [data, setData] = useState<Item[]>([]);
@@ -87,4 +86,4 @@ const Home = () => {
   );
 };
 
-export default React.memo(Home);
+export default React.memo(List);
